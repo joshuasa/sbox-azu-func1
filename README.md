@@ -1,7 +1,7 @@
 ## Python Azure Functions using Visual Studio Code
 
-* Create the Python Function
-* Debug Locally
+* [Create the Python Function](https://github.com/joshuasa/sbox-azu-func1#create-the-python-function)
+* [Debug Locally](https://github.com/joshuasa/sbox-azu-func1#debug-locally)
 
 **Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md).
 
@@ -70,3 +70,21 @@ Project will now be created.
 ### Debug Locally
 
 When you create the project, the Azure Functions extension also creates a launch configuration in `.vscode/launch.json` allowing you to use the Debug Explorer to start the project.
+
+![Debug Explorer](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_12.png)
+
+When you start the debugger, a terminal opens showing output from Azure Functions.
+
+![Debugger](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_13.png)
+
+**Ctrl + click** on the URL displayed in the terminal to open a browser to that address.
+
+**Note:** **Remote SSH** forwards local ports to host (VS Code IDE running on local Windows 10 PC with code running on remote Debian DevBox) as show in Remote Explorer below.
+
+![Forwarded Ports](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_14.png)
+
+Browser opens to `http://localhost:52792/api/HttpExample1`
+
+Test debugging function by setting a breakpoint and making a request to the URL again.
+
+![Debug](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_15.png)
