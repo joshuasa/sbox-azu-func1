@@ -23,3 +23,5 @@ $ source venv/bin/activate
 (venv) $ python --version
 Python 3.8.6
 ```
+
+Use Command Palette (`Ctrl`+`Shift`+`P`) command `Azure: Sign In` to sign in to Azure account. Use `Azure: Sign Out` to sign out and then in to another account. `Azure: Select Subscriptions` to select a subscription.
