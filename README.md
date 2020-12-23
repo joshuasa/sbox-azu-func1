@@ -28,12 +28,36 @@ $ source venv/bin/activate
 Python 3.8.6
 ```
 
-Use Command Palette (`Ctrl`+`Shift`+`P`) command `Azure: Sign In` to sign in to Azure account. Use `Azure: Sign Out` to sign out and then in to another account. `Azure: Select Subscriptions` to select a subscription.
+Use Command Palette (`Ctrl`+`Shift`+`P`) command `Azure: Sign In` to **sign in to Azure** account. Use `Azure: Sign Out` to sign out and then in to another account. `Azure: Select Subscriptions` to select a subscription.
 
 Select Azure icon in Activity Bar and then `Create New Project...` next to Functions.
 
 ![Create New Project](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_01.png)
 
-Select the `/home/joshua/sbox-azu-func1` folder created above.
+Select the `/home/joshua/projects/sbox-azu-func1` folder created above.
 
 ![Select Folder](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_02.png)
+
+Select `Python` as the programming language.
+
+![Select Python](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_03.png)
+
+Select `HTTP trigger` as function template.
+
+![Select HTTP Trigger](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_04.png)
+
+Use `HttpExample1` as function name.
+
+![HttpExample1](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_05.png)
+
+Select `Anonymous` for authorization level.
+
+![Authorization Level](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_06.png)
+
+Finally select `Open in current window`.
+
+![Open in current window](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_07.png)
+
+Project will now be created.
+
+![Local Project](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_11.png)
