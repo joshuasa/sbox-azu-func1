@@ -1,6 +1,11 @@
 ## Python Azure Functions using Visual Studio Code
 
+* Create the Python Function
+* Debug Locally
+
 **Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md).
+
+### Create the Python Function
 
 Install Visual Studio Code **Azure Account**
 
@@ -61,3 +66,7 @@ Finally select `Open in current window`.
 Project will now be created.
 
 ![Local Project](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_11.png)
+
+### Debug Locally
+
+When you create the project, the Azure Functions extension also creates a launch configuration in `.vscode/launch.json` allowing you to use the Debug Explorer to start the project.
