@@ -2,7 +2,7 @@
 
 * [Create the Python Function](https://github.com/joshuasa/sbox-azu-func1#create-the-python-function)
 * [Debug Locally](https://github.com/joshuasa/sbox-azu-func1#debug-locally)
-* Deploy to Azure
+* [Deploy to Azure](https://github.com/joshuasa/sbox-azu-func1#deploy-to-azure)
 
 **Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md).
 
@@ -116,16 +116,16 @@ Select location.
 
 ![Location](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_21.png)
 
-It takes a few minutes to create required resources and deploy the function to Azure. Process can be monitored in Output Window and popup messages.
+It takes a few minutes to create required resources and deploy the function to Azure. Process can be monitored in Output Window and popup messages. Select `View Output` in last popup message.
 
 ![Completed](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_24.png)
 
 ![Output Window](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_25.png)
 
-Function now displayed in Azure Functions Explorer.
+Function now displayed in Azure Functions Explorer under Subscription.
 
 ![Function Deployed](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_26.png)
 
-In Azure portal a new Resource Group will be created with Function App, Application Insights and App Service Plan resources.
+In Azure portal a new **Resource Group** will be created with **Function App**, **Application Insights**, **Storage Account** and **App Service Plan** resources.
 
 ![Azure Portal](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_27.png)
