@@ -2,6 +2,7 @@
 
 * [Create the Python Function](https://github.com/joshuasa/sbox-azu-func1#create-the-python-function)
 * [Debug Locally](https://github.com/joshuasa/sbox-azu-func1#debug-locally)
+* Deploy to Azure
 
 **Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md).
 
@@ -92,3 +93,39 @@ Use HTTPie on host (Debian DevBox) to call the endpoint.
 Test debugging function by setting a breakpoint and making a request to the URL again.
 
 ![Debug](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_15.png)
+
+## Deploy to Azure
+
+Deploy to Function App. A Function App lets you group functions as a logic unit for easier management. Requires Azure Storage account for data and a hosting plan.
+
+Select `Deploy to Function App...` in Azure Functions Explorer.
+
+![Deploy](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_17.png)
+
+Select `Create new Function App in Azure...`
+
+![Create New](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_18.png)
+
+![Create New](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_19.png)
+
+Select Python version.
+
+![Python Version](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_20.png)
+
+Select location.
+
+![Location](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_21.png)
+
+It takes a few minutes to create required resources and deploy the function to Azure. Process can be monitored in Output Window and popup messages.
+
+![Completed](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_24.png)
+
+![Output Window](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_25.png)
+
+Function now displayed in Azure Functions Explorer.
+
+![Function Deployed](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_26.png)
+
+In Azure portal a new Resource Group will be created with Function App, Application Insights and App Service Plan resources.
+
+![Azure Portal](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_27.png)
