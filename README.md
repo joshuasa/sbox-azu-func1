@@ -1,12 +1,12 @@
 ## Python Azure Functions using Visual Studio Code
 
-* [Create the Python Function](https://github.com/joshuasa/sbox-azu-func1#create-the-python-function)
+* [Create Python (HTTP Trigger) Function](https://github.com/joshuasa/sbox-azu-func1#create-the-python-function)
 * [Debug Locally](https://github.com/joshuasa/sbox-azu-func1#debug-locally)
 * [Deploy to Azure](https://github.com/joshuasa/sbox-azu-func1#deploy-to-azure)
 
-**Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md).
+**Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md). **Azure Functions Core Tools** must be installed.
 
-## Create the Python Function
+## Create Python (HTTP Trigger) Function
 
 Install Visual Studio Code **Azure Account**
 
