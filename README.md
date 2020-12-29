@@ -96,7 +96,7 @@ Test debugging function by setting a breakpoint and making a request to the URL 
 
 ## Deploy to Azure
 
-Deploy to Function App. A Function App lets you group functions as a logic unit for easier management. Requires Azure Storage account for data and a hosting plan.
+Deploy to Function App. A Function App lets you group functions as a logic unit for easier management. Requires Azure **Storage Account** for data and a **Hosting Plan**.
 
 Select `Deploy to Function App...` in Azure Functions Explorer.
 
@@ -108,7 +108,17 @@ Select `Create new Function App in Azure...`
 
 ![Create New](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_19.png)
 
-Select Python version.
+Azure Functions uses a **consumption plan** by default. Select advanced option (`Create new Function App in Azure... Advanced`) if you want to use another hosting plan.
+
+Hosting Plan Options:
+* Consumtion Plan<br>
+Pay only when functions are running, scale out automatically
+* Premium Plan<br>
+Perpetually warm instances to avoid cold start, unlimited execution duration, premium instance sizes
+* Dedicated (App Service) Plan<br>
+Run on the same dedicated VMs as other App Service apps.
+
+Next select Python version.
 
 ![Python Version](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_20.png)
 
