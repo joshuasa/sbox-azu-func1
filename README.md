@@ -3,7 +3,7 @@
 * [Create Python (HTTP Trigger) Function](https://github.com/joshuasa/sbox-azu-func1#create-python-http-trigger-function)
 * [Debug Locally](https://github.com/joshuasa/sbox-azu-func1#debug-locally)
 * [Deploy to Azure](https://github.com/joshuasa/sbox-azu-func1#deploy-to-azure)
-* Add Azure Queue Storage binding
+* [Add Azure Queue Storage Binding](https://github.com/joshuasa/sbox-azu-func1#add-azure-queue-storage-binding)
 
 **Note:** Working on **Debian DevBox** installed as per [documentation](https://github.com/joshuasa/remote-work-ecosystem/blob/main/content/debian-devbox.md). **Azure Functions Core Tools** must be installed.
 
@@ -143,11 +143,9 @@ In Azure portal a new **Resource Group** will be created with **Function App**, 
 
 ## Add Azure Queue Storage Binding
 
-A **binding** lets you connect your function code to resources, such as Azure storage, without writing any data access code. Binding is defined in the `function.json` file.
+A **binding** lets you connect your function code to resources, such as Azure Queue Storage, without writing any data access code. Bindings are defined in the `function.json` file.
 
-Sync the remote settings for your Azure Functions project into your `local.settings.json` file by opening the Command Palette (`Ctrl`+`Shift`+`P`) and selecting `Azure Functions: Download Remote Settings...`
-
-Open `local.settings.json` and check that it contains a value for AzureWebJobsStorage (the connection string for the storage account).
+**Note:** Sync the remote settings for your Azure Functions project into your `local.settings.json` file by opening the Command Palette (`Ctrl`+`Shift`+`P`) and selecting `Azure Functions: Download Remote Settings...` Now open `local.settings.json` and check that it contains a value for AzureWebJobsStorage (the connection string for the storage account).
 
 Next right-click the HttpExample1 (Local Project) function and select `Add binding...`
 
@@ -172,3 +170,15 @@ Name the queue to which the message will be sent.
 Asking for the storage connection, select setting from `local.settings.json` (use the same default storage account used by the function app).
 
 ![Storage Account](https://raw.githubusercontent.com/joshuasa/sbox-azu-func1/master/doc/images/sbox-azu-func1_33.png)
+
+Verify that the binding is added to the `function.json` file.
+
+```json
+{
+    "type": "queue",
+    "direction": "out",
+    "name": "msg",
+    "queueName": "outqueue",
+    "connection": "AzureWebJobsStorage"
+}
+```
